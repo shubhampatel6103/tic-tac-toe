@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body class="d-flex align-items-center justify-content-center vh-100 font-monospace" style="background-color: lightgray;">
+    <div class="mx-auto custom-container p-4 text-center">
+        <h3>Welcome to</h3>
+        <h1>Tic Tac Toe!</h1>
+        <br>
+        <a href="cvp.html"><button id="cvp" type="button" class="btn btn-primary">Play with Computer</button></a>
+        <a href="names.html"><button type="button" class="btn btn-success">Play with Person</button></a>
+        <br>
+        <br>
+        <a href="rules.html"><button type="button" class="btn btn-secondary">How to Play</button></a>
+    </div>
+    <script>
+        document.getElementById('cvp').addEventListener('click', () => {
+            sessionStorage.setItem('player1', JSON.stringify({name: 'You', score: 0}));
+            sessionStorage.setItem('player2', JSON.stringify({name: 'Computer', score: 0}));
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

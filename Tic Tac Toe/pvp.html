@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - 2 Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100 font-monospace" style="background-color: lightgray;">
+    <div class="ms-5 me-5">
+        <h3>Player vs Player</h3>
+        <h4 id="pvp-game-status"></h4>
+        <br><br>
+        <h3>Score</h3>
+        <h4 id="pvp-p1-score"></h4>
+        <h4 id="pvp-p2-score"></h4>
+        <br>
+        <a href="index.html"><button class="btn btn-success">Back</button></a>
+        <a href="pvp.html" id="reset-link"><button id="reset" class="btn btn-success" disabled>Reset</button></a>
+    </div>
+    <div class="container mx-auto custom-container p-4 text-center big-box">
+        <div class="row row-box">
+            <div class="col border-bottom border-end border-dark col-box">
+                <button id="pvp-11" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+            <div class="col border-bottom border-start border-end border-dark col-box">
+                <button id="pvp-12" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+            <div class="col border-bottom border-start border-dark col-box">
+                <button id="pvp-13" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+        </div>
+        <div class="row row-box">
+            <div class="col border-top border-end border-bottom border-dark col-box">
+                <button id="pvp-21" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+            <div class="col border border-dark col-box">
+                <button id="pvp-22" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+            <div class="col border-top border-start border-bottom border-dark col-box">
+                <button id="pvp-23" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+        </div>
+        <div class="row row-box">
+            <div class="col border-top border-end border-dark col-box">
+                <button id="pvp-31" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+            <div class="col border-top border-start border-end border-dark col-box">
+                <button id="pvp-32" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+            <div class="col border-top border-start border-dark col-box">
+                <button id="pvp-33" class="d-flex align-items-center justify-content-center btn" type="button"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/dest/pvp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
